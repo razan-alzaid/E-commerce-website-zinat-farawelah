@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>زينة فراولة </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="250px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="shop.html">المنتجات</a></li>
+                        <li><a href="index.html#about">من نحن</a></li>
+                        <li><a href="index.html#contact">تواصل معنا</a></li>
+                        <li><a href="account.html">الحساب</a></li>
+                        <li><a href="cart.html"><img src="images/shopping-cart.png" width="30px" height="30px"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!--        account-page         -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/greeting.png" alt="greeting" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">تسجيل الدخول</span>
+                            <span onclick="register()">التسجيل</span>
+                            <hr id="indicator">
+                        </div>
+
+                        <form id="logform">
+                            <input type="text" placeholder="اسم المستخدم">
+                            <input type="password" placeholder="كلمة المرور">
+                            <button type="submit" class="btn">تسجيل الدخول</button>
+                            <a href="">نسيت كلمة المرور</a>
+                        </form>
+    
+                        <form id="regform">
+                            <input type="text" placeholder="اسم المستخدم">
+                            <input type="email" placeholder="البريد الإلكتروني">
+                            <input type="password" placeholder="كلمة المرور">
+                            <button type="submit" class="btn">التسجيل</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var loginform = document.getElementById("logform")
+        var registerform = document.getElementById("regform")
+        var indicator = document.getElementById("indicator")
+
+        function register() {
+            registerform.style.transform = "translateX(0px)";
+            loginform.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(100px)";
+
+        }
+        function login() {
+            registerform.style.transform = "translateX(300px)";
+            loginform.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(0px)";
+        }
+            </script>
+
+
+<!----- footer ----->
+<footer>
+    <div class="footer-content">
+        <h3>زينة فراولة</h3>
+        <p>صنعت يدويًا بواسطة الصلصال</p>
+        <ul class="social-footer">
+            <li><a href="https://api.whatsapp.com/send/?phone=966554400298&text&type=phone_number&app_absent=0"
+                    target="_blank">
+                    <img src="images\whatsapp.png" width="30px" height="30px"></a></li>
+            <li><a href="https://www.instagram.com/zyent_frawlt/" target="_blank">
+                    <img src="images\instagram.png" width="30px" height="30px"></a></li>
+            <li><a href="mailto:zfarawelah@gmail.com" target="_blank">
+                    <img src="images\email.png" width="30px" height="30px"></a></li>
+        </ul>
+    </div>
+
+    </script>
+
+    <div class="footer-bottom">
+        <p>copyright &copy;2021 زينة فراولة.</p>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
